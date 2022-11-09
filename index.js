@@ -1,7 +1,1 @@
-if (false ?? true ?? false) {
-    alert("trueです！");
-}
-
-if(0){
-    alert("通っています")
-}
+const char = document.querySelector(".js-char");

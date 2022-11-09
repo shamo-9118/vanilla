@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    padding: 50px;
+    background-color: #f0f9c7;
+}
+.container-char {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdde88;
+    margin-bottom: 50px;
+}
+.char-style {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1em;
+    width: 100%;
+    padding: 100px;
+}
+.char-animation {
+    animation-name: char-animation;
+    animation-duration: 1.2s;
+    timing-function: ease;
+}
+
+@keyframes char-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
