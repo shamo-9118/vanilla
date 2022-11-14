@@ -1,0 +1,14 @@
+{
+    "name": "learn-vanilla",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/shamo-9118/vanilla.git",
+    "author": "shamo-9118 <won9118391183@gmail.com>",
+    "scripts": {
+        "tsc": "./node_modules/.bin/tsc"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "typescript": "^4.8.4"
+    }
+}

@@ -1,1 +1,2 @@
-const char = document.querySelector(".js-char");
+"use strict";
+const text = "foo";
