@@ -54,6 +54,6 @@ const persons = [
     { name: "mark", lang: "en" },
 ];
 const japanese = persons.filter((person) => person.lang === "ja");
-const english = persons.filter(isUserB);
+const english = persons.filter(isUserB); //書き方はどちらでもいい！
 console.log(japanese);
 console.log(english);
