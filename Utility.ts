@@ -1,1 +1,0 @@
-//色々なutility typesを使ってみる
