@@ -43,11 +43,9 @@ const isUserB = (user: UserA | UserB): user is UserB => {
 
 const Users = (users: any) => {
     if (isUserA(users)) {
-        console.log(users);
         return;
     }
     if (isUserB(users)) {
-        console.log(users);
         return;
     }
 };
@@ -75,6 +73,3 @@ const japanese = persons.filter(
     (person): person is personA => person.lang === "ja"
 );
 const english = persons.filter(isUserB); //書き方はどちらでもいい！
-
-console.log(japanese);
-console.log(english);

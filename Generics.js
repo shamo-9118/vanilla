@@ -30,7 +30,6 @@ const obj = {
     c: true,
 };
 const getProperty = (obj, key) => {
-    console.log(obj[key]);
     return obj[key];
 };
 const setProperty = (obj, key, value) => {
@@ -39,4 +38,3 @@ const setProperty = (obj, key, value) => {
 const hoge = getProperty(obj, "c");
 setProperty(obj, "b", "Hello");
 setProperty(obj, "c", false);
-console.log(obj);

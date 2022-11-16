@@ -52,7 +52,6 @@ const obj = {
 };
 
 const getProperty = <T, K extends keyof T>(obj: T, key: K) => {
-    console.log(obj[key]);
     return obj[key];
 };
 
@@ -64,4 +63,3 @@ const hoge = getProperty(obj, "c");
 
 setProperty(obj, "b", "Hello");
 setProperty(obj, "c", false);
-console.log(obj);
