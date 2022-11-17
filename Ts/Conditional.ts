@@ -4,14 +4,29 @@ type Props = {
     age: number;
 };
 
-type Filter<T,U> = { //第一引数にはPropsが第二引数には指定した型がきます！
+type Filter<T, U> = {
+    //第一引数にはPropsが第二引数には指定した型がきます！
     [K in keyof T]: T[K] extends U ? K : never;
-}[keyof T];//ここの書き方よくわからないーーー
+}[keyof T]; //ここの書き方よくわからないーーー
 
-type StringKeys = Filter<Props,string>;
-type NumberKeys = Filter<Props,number>;
+type StringKeys = Filter<Props, string>;
+type NumberKeys = Filter<Props, number>;
 
+const stringKeys: StringKeys = "id";
+const numberKeys: NumberKeys = "age"; //どちらの変数も型のキーにあったものが補完で表示される！
 
-const stringKeys: StringKeys = "id"
-const numberKeys:NumberKeys = "age"  //どちらの変数も型のキーにあったものが補完で表示される！
+interface Todo {
+    title: string;
+    description: string;
+    completed: boolean;
+}
 
+type MyType<T, K extends keyof T> = {
+    [Key in K]: T[K];
+};
+
+const todo: MyType<Todo, "title" | "description" | "completed"> = {
+    title: "今日のご飯",
+    description: "肉じゃが、味噌汁、おひたし",
+    completed: false,
+};
